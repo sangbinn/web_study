@@ -9,7 +9,13 @@
 <style>
     input:enabled{
         color:blue;
-        font-style: italic
+        font-style: italic;
+    }
+    p.bg{
+        display:inline;
+        background-color: orangered;
+        color:wheat;
+        font-weight:bold;
     }
 </style>
 <body>
@@ -26,22 +32,30 @@
         <div>
             <span>닉네임 : </span>
             <input type="password" name="pw" placeholder="닉네임을 입력해주세요">
+            <br>
+            <br>
         </div>
         <div>
-            <p>성별을 입력해 주세요.</p>
+            <p class="bg">성별을 입력해 주세요.</p>
             <input type="radio" name="gender" value="male"><span>남자</span>
             <input type="radio" name="gender" value="female"><span>여자</span>
             <input type="radio" name="gender" value="other"><span>그 외</span>
+            <br>
+            <br>
         </div>
         <div></div>
-            <p>생년월일을 입력해 주세요.</p>
+            <p class="bg">생년월일을 입력해 주세요.</p>
             <span>년 : </span><input type="text" name="birth" placeholder="year">
             <span>월 : </span><input type="text" name="birth" placeholder="month">
             <span>일 : </span><input type="text" name="birth" placeholder="day">
+            <br>
+            <br>
         </div>
         <div>
-            <p>프로필 사진을 업로드해 주세요.</p>
+            <p class="bg">프로필 사진을 업로드해 주세요.</p>
                 <span></span><input type="file" name="upload" accept="image/*">
+                <br>
+                <br>
             </div>
         </div>
         <div>
