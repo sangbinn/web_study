@@ -1,29 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Youtube</title>
+    <link rel="shortcut icon" type="image⁄x-icon" href="data:image/png;base64,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">
 </head>
+
 <style>
-    h1{
-        font-family:'Nanum Gothic', sans-serif;
-        display:inline;
-        background-color:darkblue;
-        color:skyblue;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    *{
+      margin: 0;
+      padding: 0;
+}
+    #head1 {
+        width: 1480px;
+        height: 70px;
+        position: fixed;
+        z-index: 7;
+        background-color: white;
     }
+    #head2 {
+        border: 1px solid white;
+        border-bottom-color:lightgrey;
+        width: 1480px;
+        height: 20px;
+        position: fixed;
+        z-index: 5;
+        background-color: white;
+        padding-left: 345px;
+        padding-top: 6px;
+        padding-bottom: 15px;
+        margin-top: 60px;
+    }
+    .category {
+        color: gray;
+        padding: 7px;
+        padding-bottom: 12px;
+        display: inline;
+    }
+    #selected {
+        color: black;
+        border: 3px solid white;
+        border-bottom-color: black;
+    }
+    .emoji {
+        position: absolute;
+        left: 92%;
+        top: 20%;
+    }
+    #profile {
+        position: absolute;
+        left: 99%;
+        top: 20%;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        
+    }
+    #logo {
+        position: relative;
+        top: 20%;
+        width: 40px;
+        height: 40px;
+    }
+    .search {
+        margin-left: 250px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 370px;
+    }
+    input {
+        border: 1px solid lightgrey;
+    }
+    .button {
+        position: relative;
+        top: 10%;
+        font-size: 25px;
+        border-radius: 100%;
+    }
+    #menu {
+        border: 1px solid white;
+        width: 250px;
+        height: 800px;
+        position: fixed;
+        z-index: 6;
+        background-color: white;
+        top: 8%;
+    }
+    .video {
+        width: 800px;
+        height: 155px;
+        padding-left: 345px;
+    }
+    .title {
+        padding-left: 265px;
+        position: relative;
+        bottom: 95%;
+        font-size: 110%;
+        font-weight: bold;
+    }
+    .text {
+        padding-left: 265px;
+        position: relative;
+        bottom: 95%;
+        font-size: 80%;
+        color: gray;
+    }
+    .length {
+        margin-left: -42px;
+        position: relative;
+        bottom: 5%;
+        font-size: 75%;
+        font-weight: bold;
+        color: white;
+        background-color : black;
+        border : 1px solid black;
+        border-radius: 20%;
+    }
+    .thumbnail {
+        border-radius: 5%;
+        width: 31%;
+    }
+    #shorts {
+        border: 1px solid white;
+        border-top-color:lightgrey;
+        border-bottom-color:lightgrey;
+        width: 1070px;
+        height: 460px;
+        margin-left: 345px;
+    }
+    #shorts  .video {
+        width: 100px;
+        height: 100px;
+        padding-left: 0px;
+        border-radius: 20%;
+        display: inline;
+    }
+    #shorts  .thumbnail {
+        width: 19.5%;
+        height: 66%;
+        object-fit: cover;
+    }
+    #shorts  .text {
+        width: 200px;
+        padding-left: 0px;
+        position: relative;
+        bottom: 0%;
+        font-size: 90%;
+        color: black;
+        display: inline-block;
+    }
+
 </style>
+
 <body>
-    <img>
-    <h1>시간표</h1>
+    <h3 id="head1">
+        &emsp;&ensp;<span style="font-size: 2em;">≡</span>&ensp;
+        <img id="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAjVBMVEX/////AQH/AAD++vn5AAD4NjX48PD///32AADyf37tAADyAAD98vL67ez3wL/wPDvyNjbrZWPwbm70dnj3np7yq6v0srL10M30KSn1o6PuPz/35OT42tr11NP2zc30jYzuWFfqSkntX173l5bzSUf3HBzscnDvhoPxU1LuLC3xEQ/wt7Xuj4/xHh72xsWrOv5AAAADYklEQVRoge2Zi3KqMBCGQ5I2UEVEAQt4rxYvlfd/vBOgUm075E8bzkxn8o+XjIZ87AK7SZYQKysrKysrKysrKyurvyshhPy4aV9/v/nsBVu/auYVJep2+/oPEqIPTjso8/P5YjlK4mjlTSfb9WaXZUEwHo+Px4ej/AqCIMt2m/U2nEw9b/USpXFyLhc5a4bRdULV2y/ftrvgec9rOQ5Vy3GcpvdpvHtNlz7RvOyy82yyd+8GrN611I33Y9zLZKYDlb5hhUvb0X4sSt2Cwa6W3VjIf09ttGawqwUpDEErvaJcQeauOSzlI9jg0JSTa3AGUok/MMrlc5B7doxynRTkeiaxErwFuUd6Y7BGuPiuIVv0CcMK17C97hDi5sZixjvXWULc0kCEvOcmEDdWcTVPi9IIihyr7nEp100ZtIDsnSq440Wod+fRCWTvQcF9eBRlxjVspgc1VJ5YpuQyweILftfLCI3kYBk2uuJGxWWM+Dczg+644dBntZ9lh5PaXimZLUPQ2UjAktwniFuRywAiSy7gZoFypbNJPACeZuNcSWbFQGkylhiYIuvfcSU5D1VxhA6Y2lrJVZz9PVeSZxvefYiLcIeKSd0XrnR2cuy8zFAiHCpO/itXkofRvgPMEa5fcZVx4zOYxN92blo4V89eIfJJV9jkfi9cMlx139K9cImI94rgAflZ874i5VGZmTCuxnMkSH4A8iHw/GrFK+J7yJwHi1dwfCYsPUGJkD6p0wKcB4kYYVkQzEeizvuquCHIYstNzjekAvW8rrqw+DQanF8p55NMXlidyTtdQ/Yq58/nQHMF5UHbWG/KMKC7UHmD/JyYXpdRbF1WGt1mqO7oErq+xte/PMe2KY1u51RhEnJzvUAyur8RgFzD+zkOtvw1v381Arm+2Q2d0yPIJVujXA+kVvux5sDUzcH9WNkrMvYIUx6jXq43vg2BKS/0ShvJhdPfxml5/AULza3BMrOnO9d1PhVpmuE6Grfi7i719axt+uZlWoQfFaSmivRtHcm51o0qufvnIDtMXkZ18Uq7bnU9oKmYLUdJEqdpFK1WhedNp+F6k42z3boukxV1nSxOzqNyOVvMc5+Jdpi/qLrY+e6C2gTx8W49I9p/++GTK/i20TvaysrKysrKysrKysqqb/0DaI83qKw2EhoAAAAASUVORK5CYII=">
+        YouTube
+            <input type="text" placeholder="  검색" class="search">
+            <input type="button" value="🔍" class="button">
+            <input type="button" value="🎙️" class="button">
+            <div class="emoji">🎥&nbsp&nbsp&nbsp🔔</div>
+            <img id="profile" src="https://mblogthumb-phinf.pstatic.net/MjAyMDExMDFfMTgy/MDAxNjA0MjI4ODc1NDMw.Ex906Mv9nnPEZGCh4SREknadZvzMO8LyDzGOHMKPdwAg.ZAmE6pU5lhEdeOUsPdxg8-gOuZrq_ipJ5VhqaViubI4g.JPEG.gambasg/%EC%9C%A0%ED%8A%9C%EB%B8%8C_%EA%B8%B0%EB%B3%B8%ED%94%84%EB%A1%9C%ED%95%84_%ED%95%98%EB%8A%98%EC%83%89.jpg?type=w800"></a>
+    </h3>
+    <div id="head2">
+        <div class="category" id="selected">최신</div>&emsp;
+        <div class="category">음악</div>&emsp;
+        <div class="category">게임</div>&emsp;
+        <div class="category">영화</div>
+    </div>
+    <div style="height: 205px;">
+    </div>
+    <div class="video">
+        <br>
+        <img class="thumbnail" src="thumbnail/1.jpg">
+        <span class="length">33:53</span>
+        <div class="title">Red Velvet (레드벨벳)의 킬링보이스를 라이브로!ㅣ행복 (Happiness), Chill Kill, Oh Boy, Psycho, You Better Know, Bad Boy</div>
+        <div class="text">딩고 뮤직 / dingo music
+            조회수 361만회
+            1일 전</div>
+        <div class="text"><br>눈 감았다 뜨면 33분 지나있는 레전드 킬보😙 0:00 시작 0:40 행복 (Happiness) 2:42 Dumb Dumb 3:57 Ice Cream Cake 5:20 러시안 룰렛 (Russian Roulette) 6:34 짐살라빔...</div>
+        
+    </div>
+    <div class="video">
+        <br>
+        <img class="thumbnail" src="thumbnail/2.jpg">
+        &nbsp<span class="length">6:48</span>
+        <div class="title">???: 찬물 샤워를 해보세요</div>
+        <div class="text">
+            너덜트
+            조회수 132만회
+            1일 전</div>
+        <div class="text"><br>#코믹숏무비 #너덜트 #동기부여중독 동기부여에 중독돼버려 본질을 잊은 동기부여 중독자의 꿈을 위한 고군분투 연출 / 유현규 각본 / 유현규...</div>
+    </div>
     <br>
-    <iframe src="./1.html" frameborder="1" width="1200px" height="400px" name = "first"></iframe>
-    <br>
-    <h1>회원가입</h1>
-    <br>
-    <iframe src="./2.html" frameborder="1" width="1200px" height="600px" name ="second"></iframe>
-    
+    <div id="shorts">
+        <br>
+        <h3>인기 급상승 Shorts<span style="float: right">⋮&emsp;</span></h3>
+        <br>
+        <div class="video">
+            <img class="thumbnail" src="thumbnail/a.jpg">
+        </div>
+        <div class="video">
+            <img class="thumbnail" src="thumbnail/b.jpg">
+        </div>
+        <div class="video">
+            <img class="thumbnail" src="thumbnail/c.jpg">
+        </div>
+        <div class="video">
+            <img class="thumbnail" src="thumbnail/d.jpg">
+        </div>
+        <div class="video">
+            <img class="thumbnail" src="thumbnail/e.jpg" style="display: inline;">
+        </div>
+        <div class="text">
+            인천 고쉐프의 신선한 초밥 / The best sushi #shorts#
+        </div>&ensp;
+        <div class="text">
+            시각장애인이 혼자 버스를 탈때 미국 시민들의 반응은?
+        </div>&ensp;
+        <div class="text">
+            ❤️‍🩹Guilty & Two MIN 🐥🐥🩵💜 #TAEMIN #태민...
+        </div>&ensp;
+        <div class="text">
+            목욕하자고 할 때 강아지 반응 #shorts
+        </div>&ensp;
+        <div class="text">
+            제일 작은 사람vs 제일 작은 말&emsp;
+        </div>
+    </div>
+    <div class="video">
+        <br>
+        <img class="thumbnail" src="thumbnail/3.jpg">
+        <span class="length">28:17</span>
+        <div class="title">[ENG SUB]열한 번째 짠 황정민 정우성 EP.12 이제 '짠한형은 내꺼야! 짠스들 드루와 드루와~'</div>
+        <div class="text">
+            짠한형 신동엽
+            •
+            조회수 183만회
+            3일 전</div>
+        <div class="text"><br>#황정민 #정우성 #서울의봄 #신동엽 #정호철 #짠한형 280만 회원! 1등 간편건강식 플랫폼 랭킹닭컴 뽀득! 탱글! 맛있닭 프랑크 소시지 훈제 https://bit.l...</div>
+    </div>
+    <div class="video">
+        <br>
+        <img class="thumbnail" src="thumbnail/4.jpg">
+        &nbsp<span class="length">4:36</span>
+        <div class="title">Red Velvet 레드벨벳 'Chill Kill' MV</div>
+        <div class="text">SMTOWN
+            조회수 937만회
+            3일 전</div>
+        <div class="text"><br>Red Velvet's 3rd album "Chill Kill" is out! Listen and download on your favorite platform: https://RedVelvet.lnk.to/Chill_Kill [Tracklist] 01 Chill Kill 02 Knock Knock (Who’s There?) 03...</div>
+        
+    </div>
+    <div class="video">
+        <br>
+        <img class="thumbnail" src="thumbnail/5.jpg">
+        <span class="length">20:08</span>
+        <div class="title">미노이의 하루</div>
+        <div class="text">
+            인생84
+            •
+            조회수 38만회
+            1일 전</div>
+        <div class="text"><br>▼두찜 시래기찜닭 딱 이번주까지 최대 4500원 할인!▼ https://baemin.me/ZFicyuGenK 요래 쌀쌀한날! 뜨끈 얼큰한 시래기찜닭에 밥까지 볶아먹으면 완벽♥...</div>
+        
+    </div>
+    <div class="video">
+        <br>
+        <img class="thumbnail" src="thumbnail/6.jpg">
+        <span class="length">20:47</span>
+        <div class="title">[EN]여기가 옷 지옥... 걸그룹 시그니처 숙소 청소하기 | 청소광브라이언 5화</div>
+        <div class="text">M드로메다 스튜디오
+            조회수 74만회
+            2일 전</div>
+        <div class="text"><br>역대급 싸가지 집 등장!! 걸그룹 시그니처 숙소 속 더티 빌런😈을 해치우느라 마침내 지쳐버린 청소 아저씨?! 오늘 안에 다 치울 수 있을까...?...</div>
+        
+    </div>
+    <div class="video">
+        <br>
+        <img class="thumbnail" src="thumbnail/7.jpg">
+        <span class="length">23:58</span>
+        <div class="title">유희관 (aka. 유 nobby) 전격 합류! ⭐노시환상적인 한우 먹방 2탄⭐ [둘이 왔어요 EP126]</div>
+        <div class="text">운동부 둘이 왔어요
+            •
+            조회수 40만회
+            1일 전</div>
+        <div class="text"><br>⚾2023 KBO 홈런왕⚾ ⭐노시환 왔어요 제2탄⭐ 맛있게 고기를 먹고 있던 세사람 앞에 깜짝 서프라이즈~로 등장한 2023 패션위크 참가자(?) 운동부의...</div>
+        
+    </div>
+    <div class="video">
+        <br>
+        <img class="thumbnail" src="thumbnail/8.jpg">
+        <span class="length">25:57</span>
+        <div class="title">[SUB] 💥드디어 만났다 “그”와 “그녀”의 만남💥 l EP.43 l 조현아의 목요일 밤 l 피오 표지훈 조현아</div>
+        <div class="text">조현아의 목요일 밤
+            조회수 74만회
+            3일 전</div>
+        <div class="text"><br>✨익스클루시브 하이퀄리티 프리미엄 어반 원앤온리 고품격 뮤직 토크쇼! ✨ 충성🫡 귀신 잡는 해병에서 현아 잡으러 본인 등판! 현아의 금쪽이...</div>
+        
+    </div>
+    <div class="video">
+        <br>
+        <img class="thumbnail" src="thumbnail/9.jpg">
+        &nbsp<span class="length">3:50</span>
+        <div class="title">다비치 (DAVICHI) - 지극히 사적인 얘기 (A very personal story) MV</div>
+        <div class="text">Stone Music Entertainment
+            조회수 21만회
+            1일 전</div>
+        <div class="text"><br>다비치 (DAVICHI) - 지극히 사적인 얘기 (A very personal story) MV 안녕하세요? 다비치입니다. 저희가 같이 안 해본 게 웬만해서는 없는데 한 번도 곡을...</div>
+        
+    </div>
+    <div class="video">
+        <br>
+        <img class="thumbnail" src="thumbnail/10.jpg">
+        &nbsp<span class="length">8:34</span>
+        <div class="title">[무삭제풀버전✂] 지금까지 공개 코미디에서 이런 호흡은 없었다!! '데프콘 어때요' [개그 콘서트/Gag Concert Ep.1051] | KBS 231112 방송</div>
+        <div class="text"> 개그콘서트
+            •
+            조회수 25만회
+            1일 전</div>
+        <div class="text"><br>NO 삭제! NO 삐-소리! 화면 조정 하나 없이! 녹화 당시 현장감을 그대로 느낄 수 있는 무삭제 디렉터스컷! 무대 풀버전을 업로드합니다🎥 #데프콘...</div>
+        
+    </div>
+    <iframe id="menu" src="./menu.html"></iframe>
 </body>
+
 </html>
