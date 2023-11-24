@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>초시계</title>
+</head>
+<script>
+    let minute = 0;
+    let second = 0;
+    let audio = new Audio('https://t1.daumcdn.net/cfile/tistory/99644A3C5CEA9DF014');
+    setInterval(() => {
+        if(second == 60)
+        {
+            minute++;
+            second = 0;
+            audio.play();
+        }
+        if(second < 10)
+            document.body.innerHTML= (minute+":"+ "0" + second);
+        else
+            document.body.innerHTML= (minute+":"+second);
+        second++;
+    }, 100);
+    
+    
+</script>
+
+<body>
+
+</body>
+
+</html>
